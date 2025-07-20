@@ -14,7 +14,7 @@ st.set_page_config(page_title="Car Stock Dashboard", page_icon=":bar_chart:", la
 @st.cache_data
 
 def get_data():
-    df = pd.read_csv('C:/Users/acer/Downloads/cars.csv', index_col=0)
+    df = pd.read_csv('cars.csv', index_col=0)
     return df
 
 df = get_data()
